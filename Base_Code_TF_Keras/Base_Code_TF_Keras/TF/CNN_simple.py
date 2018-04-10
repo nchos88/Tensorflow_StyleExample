@@ -59,13 +59,15 @@ predict_v2 = tf.argmax( output_v2 , dimension = 1 )
 # LOSS
 loss = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits( logits = output_v2, labels = Y ) )
 loss_v1 = tf.reduce_mean( tf.losses.log_loss( predictions = output_v2, labels = Y ) )
-#loss_v1 = tf.reduce_mean( tf.losses.cross( logits = output_v2, labels = Y ) )
+loss_v2 = tf.reduce_mean( tf.losses.softmax_cross_entropy( logits = output_v2, 
+                                                           onehot_labels = Y , 
+                                                           reduction= tf.losses.Reduction.SUM_BY_NONZERO_WEIGHTS) )
 
 #optimizer  
 sgd =tf.train.GradientDescentOptimizer( 0.2 )
 
 # minimize 
-train_op = sgd.minimize( loss = loss_v1 , global_step = tf.train.get_global_step())
+train_op = sgd.minimize( loss = loss_v2 , global_step = tf.train.get_global_step())
 
 
 # Start Session 

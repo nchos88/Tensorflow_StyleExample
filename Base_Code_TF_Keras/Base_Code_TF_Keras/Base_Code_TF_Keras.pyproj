@@ -27,9 +27,6 @@
     <Compile Include="numpy_test\eye.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TF\CNN_refSample.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="TF\CNN_simple.py">
       <SubType>Code</SubType>
     </Compile>
