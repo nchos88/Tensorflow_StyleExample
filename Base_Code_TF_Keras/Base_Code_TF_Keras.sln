@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Base_Code_TF_Keras", "Base_Code_TF_Keras\Base_Code_TF_Keras.pyproj", "{BC6973C7-7E60-49B4-9F0B-9A2280AA1062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC6973C7-7E60-49B4-9F0B-9A2280AA1062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6973C7-7E60-49B4-9F0B-9A2280AA1062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A54C322-58A1-403B-A7DB-F420B9C4E59D}
+	EndGlobalSection
+EndGlobal

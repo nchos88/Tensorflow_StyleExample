@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>bc6973c7-7e60-49b4-9f0b-9a2280aa1062</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>TF\CNN_simple.py</StartupFile>
+    <SearchPath>loaderr</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Base_Code_TF_Keras</Name>
+    <RootNamespace>Base_Code_TF_Keras</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.5</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="loaderr\Loader_mnist.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="numpy_test\eye.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TF\CNN_refSample.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TF\CNN_simple.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Keras\" />
+    <Folder Include="loaderr\" />
+    <Folder Include="tf_test\" />
+    <Folder Include="numpy_test\" />
+    <Folder Include="TF\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
