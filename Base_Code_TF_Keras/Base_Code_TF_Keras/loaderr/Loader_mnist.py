@@ -34,7 +34,7 @@ def Loadmnist_slow(path , output_img = True):
     
     return datas, labels
 
-def Loadmnist(path  , output_img = True ):
+def Loadmnist(path , output_img = True):
 
     labels = []
     datas = []
@@ -46,7 +46,6 @@ def Loadmnist(path  , output_img = True ):
     
     labels = np.asarray(labels).astype(np.int8)
     datas = np.asarray(datas).astype(np.int8)
-    print(datas.shape)
     if output_img:
         datas = datas.reshape((datas.shape[0],28,28,1))
     return datas, labels

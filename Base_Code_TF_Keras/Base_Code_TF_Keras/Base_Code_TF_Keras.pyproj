@@ -4,13 +4,13 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bc6973c7-7e60-49b4-9f0b-9a2280aa1062</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>util\json\json_ex_simple1.py</StartupFile>
+    <StartupFile>TF\CNN_simple.py</StartupFile>
     <SearchPath>loaderr</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Base_Code_TF_Keras</Name>
     <RootNamespace>Base_Code_TF_Keras</RootNamespace>
-    <InterpreterId>Global|VisualStudio|TF_Py35</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.5</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,25 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Keras\ANN_mnist.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Keras\Keras_Callback.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Keras\Keras_model_load.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Keras\Keras_model_save.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Keras\quiver_vidualize_cnn.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="loaderr\Loader_mnist.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="loaderr\mnistToimg.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="numpy_test\eye.py">
@@ -48,24 +30,16 @@
     <Compile Include="TF\CNN_simple.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TF\tensorboard_tester.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="util\json\json_ex_simple1.py">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|VisualStudio|TF_Py35" />
+    <InterpreterReference Include="Global|PythonCore|3.5" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Keras\" />
     <Folder Include="loaderr\" />
-    <Folder Include="util\" />
     <Folder Include="tf_test\" />
     <Folder Include="numpy_test\" />
     <Folder Include="TF\" />
-    <Folder Include="util\json\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
