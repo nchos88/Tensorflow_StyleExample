@@ -4,13 +4,13 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bc6973c7-7e60-49b4-9f0b-9a2280aa1062</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TF\Basic\Basic1.py</StartupFile>
+    <StartupFile>TF\TensorBoard\tensorboard_tester2.py</StartupFile>
     <SearchPath>loaderr</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Base_Code_TF_Keras</Name>
     <RootNamespace>Base_Code_TF_Keras</RootNamespace>
-    <InterpreterId>Global|VisualStudio|Tf</InterpreterId>
+    <InterpreterId>Global|VisualStudio|TF_Py35</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,6 +42,9 @@
     <Compile Include="Keras\Transfer_Learning\VGG16.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Keras_Backend\Basic\LinearRegression.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="loaderr\Loader_mnist.py">
       <SubType>Code</SubType>
     </Compile>
@@ -51,16 +54,25 @@
     <Compile Include="numpy_test\eye.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TF\Basic\Ann.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TF\Basic\Basic1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TF\CNN_simple.py">
+    <Compile Include="TF\Basic\LinearRegression.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TF\Install_Check.py">
+    <Compile Include="TF\CNN_Based\CNN_simple.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TF\tensorboard_tester.py">
+    <Compile Include="TF\Basic\Install_Check.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TF\TensorBoard\tensorboard_tester.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TF\TensorBoard\tensorboard_tester2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="util\json\json_ex_simple1.py">
@@ -73,8 +85,12 @@
     <Folder Include="Keras\CNN_Based\DenseNet\" />
     <Folder Include="Keras\Util\" />
     <Folder Include="Keras\Transfer_Learning\" />
+    <Folder Include="Keras_Backend\Basic\" />
     <Folder Include="loaderr\" />
+    <Folder Include="Keras_Backend\" />
     <Folder Include="TF\Basic\" />
+    <Folder Include="TF\CNN_Based\" />
+    <Folder Include="TF\TensorBoard\" />
     <Folder Include="util\" />
     <Folder Include="tf_test\" />
     <Folder Include="numpy_test\" />
@@ -82,7 +98,7 @@
     <Folder Include="util\json\" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|VisualStudio|Tf" />
+    <InterpreterReference Include="Global|VisualStudio|TF_Py35" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-x = [[1,2,3], [4,5,6]]
+x = [[1.,2.,3.], [4.,5.,6.]]
 
 X = tf.placeholder(tf.float32 , [None , 3])
 
@@ -16,13 +16,15 @@ res = tf.matmul(X,W) + b
 
 # runner
 sess = tf.Session()
-sess.run(tf.global_variable_initializer())
+sess.run(tf.global_variables_initializer())
 print('-- x --')
-print(sess.run(X))
+print(sess.run(X , feed_dict = {X : x}))
 print('-- w --')
 print(sess.run(W))
 print('-- b --')
-print(sess.run(x))
+print(sess.run(b))
+print('-- res --')
+print(sess.run(res , feed_dict = { X : x}))
 
 
 
