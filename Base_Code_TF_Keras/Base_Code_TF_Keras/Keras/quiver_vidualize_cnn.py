@@ -23,4 +23,3 @@ server.launch(model = model2,temp_folder='./quiver/tmp',input_folder=r'data\mnis
 
 
 
-\

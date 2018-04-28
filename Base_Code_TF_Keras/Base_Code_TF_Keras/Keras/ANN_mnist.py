@@ -69,7 +69,7 @@ score = model_ver2.evaluate( xTest , yTest )
 
 acclist = history.history['acc']
 
-print()
+print("done")
 
 
 

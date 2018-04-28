@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bc6973c7-7e60-49b4-9f0b-9a2280aa1062</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>util\json\json_ex_simple1.py</StartupFile>
+    <StartupFile>Keras\ANN_mnist.py</StartupFile>
     <SearchPath>loaderr</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -24,6 +24,9 @@
     <Compile Include="Keras\ANN_mnist.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Keras\CNN_Based\DenseNet\Densenet_model.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Keras\Keras_Callback.py">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +39,9 @@
     <Compile Include="Keras\quiver_vidualize_cnn.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Keras\Transfer_Learning\VGG16.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="loaderr\Loader_mnist.py">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +49,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="numpy_test\eye.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TF\Basic\Basic1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TF\CNN_simple.py">
@@ -60,7 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Keras\" />
+    <Folder Include="Keras\CNN_Based\" />
+    <Folder Include="Keras\CNN_Based\DenseNet\" />
+    <Folder Include="Keras\Util\" />
+    <Folder Include="Keras\Transfer_Learning\" />
     <Folder Include="loaderr\" />
+    <Folder Include="TF\Basic\" />
     <Folder Include="util\" />
     <Folder Include="tf_test\" />
     <Folder Include="numpy_test\" />
