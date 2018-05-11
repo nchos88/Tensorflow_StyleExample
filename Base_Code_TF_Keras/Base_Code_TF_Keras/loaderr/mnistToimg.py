@@ -14,7 +14,7 @@ def ToImage(path,outputdir):
     datas = res.iloc[ : , 1:]
 
     labels = np.asarray(labels).astype(np.int8)
-    datas = np.asarray(datas).astype(np.int8)
+    datas = np.asarray(datas * 255).astype(np.int8)
     datas = datas.reshape((datas.shape[0],28,28,1))
 
     for i , imgdata in enumerate(datas):
